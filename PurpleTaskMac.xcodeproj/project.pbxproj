@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0000001263C000000000001 /* PurpleTaskMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000002 /* PurpleTaskMacApp.swift */; };
+		F0000001263C000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000004 /* ContentView.swift */; };
+		F0000001263C000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000006 /* Assets.xcassets */; };
+		F0000001263C000000000007 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000008 /* Task.swift */; };
+		F0000001263C000000000009 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000000A /* Category.swift */; };
+		F0000001263C00000000000B /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000000C /* SidebarView.swift */; };
+		F0000001263C00000000000D /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000000E /* CategoryRow.swift */; };
+		F0000001263C00000000000F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000010 /* TaskListView.swift */; };
+		F0000001263C000000000011 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000012 /* TaskRow.swift */; };
+		F0000001263C000000000013 /* AddTaskField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000014 /* AddTaskField.swift */; };
+		F0000001263C000000000015 /* TaskContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000016 /* TaskContextMenu.swift */; };
+		F0000001263C000000000017 /* NewCategorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000018 /* NewCategorySheet.swift */; };
+		F0000001263C000000000019 /* CategoryContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000001A /* CategoryContextMenu.swift */; };
+		F0000001263C00000000001B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000001C /* SettingsView.swift */; };
+		F0000001263C00000000001D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C00000000001E /* AboutView.swift */; };
+		F0000001263C00000000001F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000020 /* WelcomeView.swift */; };
+		F0000001263C000000000021 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000022 /* Constants.swift */; };
+		F0000001263C000000000023 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000001263C000000000024 /* DateFormatters.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0000001263C000000000025 /* PurpleTaskMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleTaskMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0000001263C000000000002 /* PurpleTaskMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleTaskMacApp.swift; sourceTree = "<group>"; };
+		F0000001263C000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0000001263C000000000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0000001263C000000000026 /* PurpleTaskMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurpleTaskMac.entitlements; sourceTree = "<group>"; };
+		F0000001263C000000000008 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F0000001263C00000000000A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F0000001263C00000000000C /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		F0000001263C00000000000E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		F0000001263C000000000010 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		F0000001263C000000000012 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		F0000001263C000000000014 /* AddTaskField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskField.swift; sourceTree = "<group>"; };
+		F0000001263C000000000016 /* TaskContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContextMenu.swift; sourceTree = "<group>"; };
+		F0000001263C000000000018 /* NewCategorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategorySheet.swift; sourceTree = "<group>"; };
+		F0000001263C00000000001A /* CategoryContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContextMenu.swift; sourceTree = "<group>"; };
+		F0000001263C00000000001C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F0000001263C00000000001E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F0000001263C000000000020 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F0000001263C000000000022 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F0000001263C000000000024 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0000001263C000000000027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0000001263C000000000028 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000029 /* PurpleTaskMac */,
+				F0000001263C00000000002A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000025 /* PurpleTaskMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0000001263C000000000029 /* PurpleTaskMac */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000002 /* PurpleTaskMacApp.swift */,
+				F0000001263C000000000004 /* ContentView.swift */,
+				F0000001263C00000000002B /* Models */,
+				F0000001263C00000000002C /* Views */,
+				F0000001263C00000000002D /* Utilities */,
+				F0000001263C00000000002E /* Resources */,
+				F0000001263C000000000026 /* PurpleTaskMac.entitlements */,
+			);
+			path = PurpleTaskMac;
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000008 /* Task.swift */,
+				F0000001263C00000000000A /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C00000000002F /* Sidebar */,
+				F0000001263C000000000030 /* Tasks */,
+				F0000001263C000000000031 /* Category */,
+				F0000001263C000000000032 /* Settings */,
+				F0000001263C000000000033 /* About */,
+				F0000001263C000000000020 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002F /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C00000000000C /* SidebarView.swift */,
+				F0000001263C00000000000E /* CategoryRow.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		F0000001263C000000000030 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000010 /* TaskListView.swift */,
+				F0000001263C000000000012 /* TaskRow.swift */,
+				F0000001263C000000000014 /* AddTaskField.swift */,
+				F0000001263C000000000016 /* TaskContextMenu.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		F0000001263C000000000031 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000018 /* NewCategorySheet.swift */,
+				F0000001263C00000000001A /* CategoryContextMenu.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F0000001263C000000000032 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C00000000001C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F0000001263C000000000033 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C00000000001E /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000022 /* Constants.swift */,
+				F0000001263C000000000024 /* DateFormatters.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F0000001263C00000000002E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001263C000000000006 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0000001263C000000000034 /* PurpleTaskMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0000001263C000000000035 /* Build configuration list for PBXNativeTarget "PurpleTaskMac" */;
+			buildPhases = (
+				F0000001263C000000000036 /* Sources */,
+				F0000001263C000000000027 /* Frameworks */,
+				F0000001263C000000000037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurpleTaskMac;
+			productName = PurpleTaskMac;
+			productReference = F0000001263C000000000025 /* PurpleTaskMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0000001263C000000000038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F0000001263C000000000034 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F0000001263C000000000039 /* Build configuration list for PBXProject "PurpleTaskMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				fr,
+				pl,
+				da,
+				fil,
+			);
+			mainGroup = F0000001263C000000000028 /* Root */;
+			productRefGroup = F0000001263C00000000002A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0000001263C000000000034 /* PurpleTaskMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0000001263C000000000037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0000001263C000000000005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0000001263C000000000036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0000001263C000000000001 /* PurpleTaskMacApp.swift in Sources */,
+				F0000001263C000000000003 /* ContentView.swift in Sources */,
+				F0000001263C000000000007 /* Task.swift in Sources */,
+				F0000001263C000000000009 /* Category.swift in Sources */,
+				F0000001263C00000000000B /* SidebarView.swift in Sources */,
+				F0000001263C00000000000D /* CategoryRow.swift in Sources */,
+				F0000001263C00000000000F /* TaskListView.swift in Sources */,
+				F0000001263C000000000011 /* TaskRow.swift in Sources */,
+				F0000001263C000000000013 /* AddTaskField.swift in Sources */,
+				F0000001263C000000000015 /* TaskContextMenu.swift in Sources */,
+				F0000001263C000000000017 /* NewCategorySheet.swift in Sources */,
+				F0000001263C000000000019 /* CategoryContextMenu.swift in Sources */,
+				F0000001263C00000000001B /* SettingsView.swift in Sources */,
+				F0000001263C00000000001D /* AboutView.swift in Sources */,
+				F0000001263C00000000001F /* WelcomeView.swift in Sources */,
+				F0000001263C000000000021 /* Constants.swift in Sources */,
+				F0000001263C000000000023 /* DateFormatters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0000001263C00000000003A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0000001263C00000000003B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F0000001263C00000000003C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PurpleTaskMac/PurpleTaskMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.purpletask.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0000001263C00000000003D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PurpleTaskMac/PurpleTaskMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.purpletask.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0000001263C000000000039 /* Build configuration list for PBXProject "PurpleTaskMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0000001263C00000000003A /* Debug */,
+				F0000001263C00000000003B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0000001263C000000000035 /* Build configuration list for PBXNativeTarget "PurpleTaskMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0000001263C00000000003C /* Debug */,
+				F0000001263C00000000003D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0000001263C000000000038 /* Project object */;
+}
