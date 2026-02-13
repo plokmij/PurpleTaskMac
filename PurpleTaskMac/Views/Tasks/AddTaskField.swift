@@ -23,6 +23,8 @@ struct AddTaskField: View {
 
             TextField("Add new task", text: $newTaskName)
                 .textFieldStyle(.plain)
+                .textContentType(.none)
+                .autocorrectionDisabled()
                 .focused($isAddTaskFocused)
                 .onSubmit {
                     addTask()

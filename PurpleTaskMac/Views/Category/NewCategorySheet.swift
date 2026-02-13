@@ -101,6 +101,7 @@ struct NewCategorySheet: View {
             .padding()
         }
         .frame(width: 400, height: 500)
+        .background(.regularMaterial)
     }
 
     @ViewBuilder
@@ -126,6 +127,8 @@ struct NewCategorySheet: View {
 
                 TextField("Category name", text: $categoryName)
                     .textFieldStyle(.roundedBorder)
+                    .textContentType(.none)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 250)
             }
 
@@ -191,6 +194,8 @@ struct NewCategorySheet: View {
                 HStack {
                     TextField("Task name", text: $newTaskText)
                         .textFieldStyle(.roundedBorder)
+                        .textContentType(.none)
+                        .autocorrectionDisabled()
                         .onSubmit {
                             addTask()
                         }

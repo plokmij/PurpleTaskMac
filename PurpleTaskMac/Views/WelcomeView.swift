@@ -73,6 +73,7 @@ struct WelcomeView: View {
         }
         .padding(.vertical, 32)
         .frame(width: 450, height: 550)
+        .background(.regularMaterial)
     }
 }
 
