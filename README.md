@@ -89,6 +89,24 @@ The app uses SwiftData for persistence. Data is stored in the app's container:
 | Cmd+Shift+N | New Category |
 | Cmd+, | Open Settings |
 
+## Roadmap
+
+### Phase 1: Core Functionality (Current)
+- Basic task management with categories
+- Due dates and progress tracking
+- Native macOS UI with SwiftUI
+
+### Phase 2: UI Enhancement
+- Redesigned task view with 4-5 tasks displayed vertically on screen (when screen size permits)
+- Improved visual hierarchy and spacing
+- Enhanced responsiveness for different window sizes
+
+### Phase 3: AI Agent Integration
+- MCP (Model Context Protocol) server support for AI agent connectivity
+- Enable AI assistants like Claude Code to interact with tasks
+- API for creating, updating, and querying tasks programmatically
+- Automation workflows for task management
+
 ## License
 
 MIT License
