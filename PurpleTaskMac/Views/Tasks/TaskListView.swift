@@ -50,14 +50,18 @@ struct TaskListView: View {
             )
 
             // Filter picker
-            Picker("Filter", selection: $filter) {
-                ForEach(TaskFilter.allCases) { filter in
-                    Text(filter.rawValue).tag(filter)
+            VStack(spacing: 0) {
+                Picker("Filter", selection: $filter) {
+                    ForEach(TaskFilter.allCases) { filter in
+                        Text(filter.rawValue).tag(filter)
+                    }
                 }
+                .pickerStyle(.segmented)
+                .labelsHidden()
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
             }
-            .pickerStyle(.segmented)
-            .padding(.horizontal)
-            .padding(.vertical, 8)
+            .background(Color(nsColor: .windowBackgroundColor))
 
             Divider()
 
@@ -75,6 +79,7 @@ struct TaskListView: View {
                             Section {
                                 ForEach(groupTasks) { task in
                                     TaskRow(task: task, categoryColor: color)
+                                        .padding(.horizontal, 16)
                                         .onDrag {
                                             draggedTask = task
                                             return NSItemProvider(object: task.id.uuidString as NSString)
@@ -92,7 +97,7 @@ struct TaskListView: View {
                                         .font(.caption)
                                         .fontWeight(.semibold)
                                         .foregroundStyle(group == .overdue ? .red : .secondary)
-                                        .padding(.horizontal)
+                                        .padding(.horizontal, 16)
                                 }
                             }
                         }
@@ -105,7 +110,8 @@ struct TaskListView: View {
 
             // Add task field
             AddTaskField(category: category, isAddTaskFocused: _isAddTaskFocused)
-                .padding()
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
         }
         .onReceive(NotificationCenter.default.publisher(for: .newTask)) { _ in
             isAddTaskFocused = true

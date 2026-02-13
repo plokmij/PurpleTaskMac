@@ -11,6 +11,7 @@ import SwiftData
 struct SidebarView: View {
     let categories: [Category]
     let uncategorizedTasks: [TaskItem]
+    let totalIncompleteTasks: Int
     @Binding var selectedCategory: Category?
     @Binding var showUncategorized: Bool
     @Binding var showNewCategorySheet: Bool
@@ -28,6 +29,19 @@ struct SidebarView: View {
                 }
             }
         )) {
+            // Greeting header
+            Section {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Hello!")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    Text("You have \(totalIncompleteTasks) tasks to complete")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.vertical, 8)
+            }
+
             // Uncategorized section
             Section {
                 UncategorizedRow(
@@ -149,6 +163,7 @@ struct CategoryDropDelegate: DropDelegate {
     SidebarView(
         categories: [],
         uncategorizedTasks: [],
+        totalIncompleteTasks: 5,
         selectedCategory: .constant(nil),
         showUncategorized: .constant(false),
         showNewCategorySheet: .constant(false)

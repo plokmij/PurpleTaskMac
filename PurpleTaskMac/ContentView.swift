@@ -31,6 +31,7 @@ struct ContentView: View {
             SidebarView(
                 categories: categories,
                 uncategorizedTasks: uncategorizedTasks,
+                totalIncompleteTasks: totalIncompleteTasks,
                 selectedCategory: $selectedCategory,
                 showUncategorized: $showUncategorized,
                 showNewCategorySheet: $showNewCategorySheet
@@ -62,16 +63,6 @@ struct ContentView: View {
         }
         .navigationSplitViewStyle(.balanced)
         .toolbar {
-            ToolbarItem(placement: .navigation) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("Hello!")
-                        .font(.headline)
-                    Text("You have \(totalIncompleteTasks) tasks to complete")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
             ToolbarItemGroup(placement: .primaryAction) {
                 Button(action: { openAboutWindow() }) {
                     Label("About", systemImage: "info.circle")
